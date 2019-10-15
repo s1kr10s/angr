@@ -33,3 +33,4 @@ from .soot_class_hierarchy import SootClassHierarchy
 from .propagator import PropagatorAnalysis
 from .xrefs import XRefsAnalysis
 from .complete_calling_conventions import CompleteCallingConventionsAnalysis
+from .typehoon import Typehoon
