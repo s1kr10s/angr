@@ -689,7 +689,7 @@ class VariableRecoveryFast(ForwardAnalysis, VariableRecoveryBase):  #pylint:disa
             block = self._clinic.block(node.addr, node.size)
         else:
             # VEX mode
-            block = self.project.factory.block(node.addr, node.size, opt_level=0)
+            block = self.project.factory.block(node.addr, node.size, opt_level=1, cross_insn_opt=False)
 
         if node.addr in self._instates:
             prev_state = self._instates[node.addr]
